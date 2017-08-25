@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple video player</title>
+</head>
+<body>
+	<h1>Video</h1>
+	<video id="myvideo" src="Mere Rashke Qamar Song With Lyrics _ Baadshaho _ Ajay Devgn, Ileana, Nusrat & Ra.mp4" controls> <!--to show control,there are other attribute also like loop, autoplay -->
+		Your browser does not support video
+	</video>
+
+	<h1>Audio</h1>
+	<audio id="myaudio" src=""><!--add audio to src-->
+	Your browser does not support audio
+	</audio>
+
+	<div><!--custom buttons for audio-->
+	<button onclick="document.getElementById('myaudio').play()">Play</button>
+	<button onclick="document.getElementById('myaudio').pause()">Pause</button>
+	<button onclick="document.getElementById('myaudio').volume+=0.1">+ Volume</button>
+	<button onclick="document.getElementById('myaudio').volume-=0.1">- Volume</button>
+	</div>
+
+	<script>
+	//var video = document.getElementById('myvideo');
+	//video.play(); // for auto play 
+    //video.pause();
+	</script>
+</body>
+</html>
